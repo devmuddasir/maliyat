@@ -1,1 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Mudassar - Finance Freelancer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="hero">
+            <h1>Hi, I'm Muhammad Mudassar</h1>
+            <p>Your Expert in Finance, Audits, and Due Diligence</p>
+            <a href="#contact" class="btn">Hire Me</a>
+        </div>
+    </section>
+
+    <section id="services">
+        <h2>Services</h2>
+        <div class="services-container">
+            <div class="service-box">
+                <h3 onclick="toggleDropdown('bookkeepingDropdown')">Bookkeeping</h3>
+                <div id="bookkeepingDropdown" class="dropdown-content">
+                    <ul>
+                        <li>General Ledger Maintenance</li>
+                        <li>Accounts Payable Management</li>
+                        <li>Accounts Receivable Management</li>
+                        <li>Bank Reconciliation</li>
+                        <li>Financial Statement Preparation</li>
+                        <li>Payroll Processing</li>
+                        <li>Expense Tracking</li>
+                        <li>Inventory Management</li>
+                        <li>Tax Preparation and Filing</li>
+                        <li>Monthly Financial Reports</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="service-box">
+                <h3 onclick="toggleDropdown('modelingDropdown')">Financial Modeling</h3>
+                <div id="modelingDropdown" class="dropdown-content">
+                    <ul>
+                        <li>Three-Statement Financial Model</li>
+                        <li>Cash Flow Forecasting</li>
+                        <li>Budgeting Models</li>
+                        <li>Valuation Models (DCF, Comparable Company Analysis)</li>
+                        <li>Project Finance Modeling</li>
+                        <li>Sensitivity Analysis</li>
+                        <li>Scenario Analysis</li>
+                        <li>M&A Financial Modeling</li>
+                        <li>Investment Appraisal Models</li>
+                        <li>Break-even Analysis</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="service-box">
+                <h3 onclick="toggleDropdown('forecastingDropdown')">Forecasting</h3>
+                <div id="forecastingDropdown" class="dropdown-content">
+                    <ul>
+                        <li>Sales Forecasting</li>
+                        <li>Revenue Forecasting</li>
+                        <li>Expense Forecasting</li>
+                        <li>Cash Flow Forecasting</li>
+                        <li>Trend Analysis</li>
+                        <li>Variance Analysis</li>
+                        <li>Economic and Market Analysis</li>
+                        <li>Demand Forecasting</li>
+                        <li>Financial Projections</li>
+                        <li>Risk Assessment and Management</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <img src="https://picsum.photos/150" alt="Profile Picture" class="profile-pic">
+        <p>
+            I am Muhammad Mudassar, a finance expert with extensive experience in 
+            providing a range of services including bookkeeping, financial modeling, 
+            and forecasting. I specialize in maintaining accurate financial records, 
+            creating sophisticated financial models, and delivering insightful forecasts 
+            that help businesses make informed decisions. My approach is detail-oriented, 
+            ensuring that every aspect of financial management is handled with precision 
+            and care. I work closely with clients to tailor solutions that meet their 
+            unique needs, ensuring they receive the best financial guidance possible. 
+            With a strong commitment to professionalism and excellence, I aim to empower 
+            my clients to achieve their financial goals.
+        </p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>If you have any questions, feel free to reach out!</p>
+        <p>
+            <strong>Email:</strong> <a href="mailto:your.email@example.com">your.email@example.com</a><br>
+            <strong>Phone:</strong> <a href="tel:+1234567890">+1 234 567 890</a>
+        </p>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <p id="formResponse"></p>
+    </section>
+
+    <footer>
+        <p>© 2024 Muhammad Mudassar | Finance Freelancer</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
 

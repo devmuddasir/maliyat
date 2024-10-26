@@ -1,15 +1,8 @@
-function toggleDropdown(dropdownId) {
-    const dropdown = document.getElementById(dropdownId);
-    dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
-}
-
-document.getElementById("contactForm").addEventListener("submit", function(event) {
-    event.preventDefault();
-    
-    let name = document.getElementById("name").value;
-    let formResponse = document.getElementById("formResponse");
-    formResponse.innerHTML = `Thank you, ${name}. Your message has been sent!`;
-
-    // Clear the form fields
-    document.getElementById("contactForm").reset();
+// GSAP Animations for Elements
+document.querySelectorAll("[data-gsap]").forEach(el => {
+    gsap.fromTo(el, { opacity: 0, y: 20 }, {
+        opacity: 1, y: 0, duration: 1.2,
+        scrollTrigger: { trigger: el, start: "top 90%", end: "bottom 60%", scrub: true }
+    });
 });
+

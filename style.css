@@ -55,21 +55,6 @@ header p {
     color: #0a4275;
 }
 
-/* Skills Section Styles */
-.skill-item {
-    background: #fff;
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
-    padding: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.skill-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-}
-
 /* Footer Styling */
 footer {
     background-color: #0a4275;
@@ -82,5 +67,6 @@ footer {
 [data-gsap] {
     opacity: 0;
 }
+
 
 

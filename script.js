@@ -6,3 +6,4 @@ document.querySelectorAll("[data-gsap]").forEach(el => {
     });
 });
 
+
